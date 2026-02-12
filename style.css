@@ -1,0 +1,268 @@
+body{
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(35, 0, 54));
+
+    color: white;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ 
+}
+
+
+
+
+nav{
+    padding: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+nav button{
+    border: none;
+    border-radius: 10px;
+}
+
+nav a{
+     color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(151, 60, 235);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#btn-generos{
+     color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(151, 60, 235);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#btn-generos:hover{
+        background-color: rgba(149, 0, 178, 0.493);
+    }
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 8px;
+
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+
+  min-width: 120px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.5);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+
+header{
+    margin: 90px 0;
+    
+}
+
+.carrossel{
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+.slide{
+     width: 100%;
+    height: 200px; /* altura fixa */
+    object-fit: contain;
+    border-radius: 20px;
+    display: none;
+    border-radius: 20px;
+}
+
+.slide.active{
+    display: block;
+}
+
+.carrossel button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+
+header a{
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(154, 21, 237);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+   
+}
+
+ a:hover{
+        background-color: rgba(149, 0, 178, 0.493);
+    }
+
+
+header img{
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+     gap: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+header img:hover{
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(222, 146, 245, 0.5);
+
+}
+
+section{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img{
+  width: 140px;
+  border-radius: 10px;
+}
+
+
+section img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  display: block;
+}
+
+
+
+.imgcont{
+  display: grid;
+  grid-template-columns: repeat(5, 140px);
+  gap: 40px;
+  justify-content: center;
+}
+
+
+.recom{
+ display: grid;
+   grid-template-columns: repeat(4, 120px);
+   gap: 5px;
+justify-content: center;}.recom{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 5px;              
+  justify-items: center;  
+  margin-top: 20px;
+}
+
+
+
+footer{
+    background-color: rgb(6, 6, 6);
+    font-weight: lighter;
+    padding: 30px;
+    gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: gray;
+
+}
+
+
+
+
+
+
+/*modo claro*/
+
+
+
+body.light{
+  background-image: none;
+  background-color: rgb(250, 244, 191);
+  color: #111;
+}
+
+body.light section{
+  background-color: #afafaf;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body.light nav a{
+  background: linear-gradient(to right, #9b5cff, #c77dff);
+  color: white;
+}
+body.light footer{
+  background-color: #eaeaea;
+}
+
+nav button.ligth{
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+}

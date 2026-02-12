@@ -1,0 +1,174 @@
+body{
+    background: linear-gradient(180deg, rgb(0, 0, 0), rgb(35, 0, 54));
+
+    color: white;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+ 
+}
+
+
+img:hover{
+    background-color: gray;
+}
+
+
+nav{
+    padding: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+nav button{
+    border: none;
+    border-radius: 10px;
+}
+
+nav a{
+     color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(151, 60, 235);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#btn-generos{
+     color: white;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(151, 60, 235);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+#btn-generos:hover{
+        background-color: rgba(149, 0, 178, 0.493);
+    }
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 110%;
+  left: 0;
+
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 8px;
+
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+
+  min-width: 120px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.5);
+  z-index: 100;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+
+   
+
+
+ a:hover{
+        background-color: rgba(149, 0, 178, 0.493);
+    }
+
+section{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+
+
+.animes{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 30px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card .titulo{
+  font-size: 14px;
+  color: #ccc;
+}
+
+.card .titulo{
+  text-align: center;
+}
+
+
+
+footer{
+    background-color: rgb(6, 6, 6);
+    font-weight: lighter;
+    padding: 30px;
+    gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: gray;
+
+}
+
+
+
+
+
+
+/*modo claro*/
+
+
+
+body.light{
+  background-image: none;
+  background-color: rgb(250, 244, 191);
+  color: #111;
+}
+
+body.light section{
+  background-color: #afafaf;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body.light nav a{
+  background: linear-gradient(to right, #9b5cff, #c77dff);
+  color: white;
+}
+body.light footer{
+  background-color: #eaeaea;
+}
+
+nav button.ligth{
+    border: none;
+    border-radius: 10px;
+    background-color: #111;
+}
